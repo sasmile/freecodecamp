@@ -1,0 +1,25 @@
+找出最长单词
+
+在句子中找出最长的单词，并返回它的长度。
+
+函数的返回值应该是一个数字。
+
+代码：
+
+function findLongestWord(str) {
+  // 请把你的代码写在这里
+ var str1 = str.split(' ');
+  
+  var str2 = str1.sort(function (x, y) {
+    if (x.length < y.length) {
+        return 1;
+    }
+    if (x.length > y.length) {
+        return -1;
+    }
+});
+
+  return str2[0].length;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
