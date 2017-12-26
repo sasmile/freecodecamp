@@ -1,0 +1,39 @@
+重复输出字符串
+
+（重要的事情说3遍）
+
+重复一个指定的字符串 num次，如果num是一个负数则返回一个空字符串。
+
+代码1：
+function repeat(str, num) {
+  // 请把你的代码写在这里
+  if(num < 0){
+    str = '';
+  }else if(num === 0){
+    str = str;
+  }else {
+    str = str.repeat(num);
+  }
+  return str;
+}
+
+repeat("abc", 3);
+
+代码2：
+function repeat(str, num) {
+  // 请把你的代码写在这里
+  if(num < 0){
+    str = '';
+    return str;
+  }else if(num === 0){   
+    return str;
+  }else {
+     var str1 = '';
+    for(var i = 0;i<num;i++){     
+      str1 += str;     
+    }
+    return str1;
+  }  
+}
+
+repeat("abc", 3);
