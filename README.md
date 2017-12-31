@@ -1,3 +1,3 @@
 # freecodecamp
-freecodecamp-Basic Algorithm Scripting答案集合；
+freecodecamp-Basic Algorithm Scripting和Intermediate Algorithm Scripting答案集合；
 
